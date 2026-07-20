@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "zh-CN",
     baseUrl: "Ake258.online",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", ".nomedia"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",

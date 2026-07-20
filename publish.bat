@@ -1,27 +1,27 @@
 @echo off
 chcp 65001 >nul
 echo ========================================
-echo   Ake258 口腔医学知识库 - 一键发布
+echo   Ake258 Oral Medicine Garden - Publish
 echo ========================================
 echo.
 
 cd /d F:\obsidian\ake258-garden
 
-echo [1/3] 检查更改...
+echo [1/3] Check changes...
 git status --short
 
 echo.
-echo [2/3] 提交更改...
+echo [2/3] Commit changes...
 git add -A
 git commit -m "update: %date% %time%"
 
 echo.
-echo [3/3] 推送到 GitHub...
+echo [3/3] Push to GitHub...
 git push
 
 echo.
 echo ========================================
-echo   发布完成！等待 Cloudflare 自动部署...
-echo   约 1-2 分钟后访问 https://ake258.online
+echo   Publish complete! Wait Cloudflare deploy...
+echo   Visit: https://ake258.online
 echo ========================================
 pause
